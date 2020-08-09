@@ -1,0 +1,14 @@
+1. git clone https://github.com/Ataiskih/fashi.git
+2. rename "setting_sample.py" to "setting.py" in fashi folder
+3. in setting.py
+    paste 
+    SECRET_KEY = 'your secret key'
+    DEBUG = False
+    ALLOWED_HOSTS = ["*"]
+    EMAIL_HOST_USER = 'your e-mail address'
+    EMAIL_HOST_PASSWORD = 'your e-mail password'
+4. in BASH
+    cd to your directory
+    python3 manage.py migrate
+    python3 manage.py createsuperuser
+    
